@@ -24,6 +24,6 @@ ngOnChanges(): void{
 }
 onClick():void{
     //this.notify.emit('clicked');
-    this.ratingClicked.emit(`The rating $(this.rating) was clicked`);
+    this.ratingClicked.emit(`The rating ${this.rating} was clicked`);
 }
 }
