@@ -1,11 +1,13 @@
 import { Component,OnChanges, Input, Output } from "@angular/core";
 import { EventEmitter } from '@angular/core';
 
+
 @Component({
 
     selector:'ai-star',
     templateUrl: './star.component.html',
     styleUrls: ['/star.component.css']
+
 
 
 })
