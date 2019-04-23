@@ -14,6 +14,9 @@ listFilter:string='cart';
 pageTitle:string='PRODUCT LIST';
 showImage :boolean =false;
 
+onNotify(message:string):void{
+
+}
 
 toggleImage(): void {
   this.showImage = !this.showImage;
@@ -69,7 +72,7 @@ toggleImage(): void {
             "releaseDate": "October 15, 2015",
             "description": "Standard two-button video game controller",
             "price": 35.95,
-            "starRating": 4.6,
+            "starRating": 10,
             "imageUrl": "https://rukminim1.flixcart.com/image/704/704/jmkwya80/home-security-camera/q/d/g/cp-gtc-d24l2-v3-cp-plus-original-imaf9gn8t7kgmkhz.jpeg"
           }
         
@@ -79,5 +82,8 @@ toggleImage(): void {
 
       console.log('In OnInit');
     }
-    
-}
+    onRatingClicked(message:string): void{
+
+    this.pageTitle='Product List: '+ message;
+      }
+    }
